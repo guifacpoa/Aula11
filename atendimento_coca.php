@@ -21,6 +21,18 @@ elseif(strlen($nome_completo) <3){
 elseif(strlen($nome_completo) > 100){
     echo "Informe um nome limitado a 100";
 }
+elseif(!isset($telefone)){
+    echo "Informe o telefone";
+}
+elseif(empty($telefone)){
+    echo "O telefone é obrigatório";
+}
+elseif(strlen($telefone) <9){
+    echo "informe o tamanho minimo";
+}
+elseif(strlen($telefone) > 13){
+    echo "Informe um telefone limitado a 13 digitos";
+}
 else{
     require_once('banco.php');
     conexao();
