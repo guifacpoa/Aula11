@@ -4,9 +4,19 @@
         background-color: cyan;
         font-family: arial;
     }
+    h1{
+        color: black;
+    }
     img{
         height: 80px;
         width: 100px;
+    }
+    button:hover{
+        color: rgb(10, 49, 175);
+    }
+    button{
+        background-color: white;
+        border: 2em;
     }
 </style>
 <html>
@@ -14,11 +24,11 @@
     <br>
     <h1>Descubra</h1>
     <form action="atendimento_coca.php" method="post">
-        <label>Informe o seu nome</label>
+        <label>Informe o seu nome:</label>
         <input type="text" name="nome">
         <br>
-        <label>Informe seu telefone</label>
-        <input type="number" name="numero">
+        <label>Informe seu telefone:</label>
+        <input type="text" name="numero" placeholder="(54) 9XXXXXXXX">
         <br>
         <button type="submit">Participe</button>
     </form>
